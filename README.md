@@ -4,50 +4,49 @@ A simple chatbot using **FastAPI** as the backend and **Streamlit** as the front
 
 ## 📦 How to Run
 
+
 ### 🔧 Backend (FastAPI)
 
-```bash
-cd backend
-uvicorn main:app --reload
+1.  bashCopyDownloadcd backend
+    
+2.  bashCopyDownloaduvicorn main:app --reload
+    
 
-💻 Frontend (Streamlit)
-bash
-Copy
-Edit
-cd frontend
-streamlit run app.py
-📁 Project Structure
-bash
-Copy
-Edit
-hello-chatbot/
-├── backend/
-│   └── main.py              # FastAPI backend code
-├── frontend/
-│   └── app.py               # Streamlit frontend code
-├── requirements.txt         # Python dependencies
-└── README.md                # Project overview
-✅ Requirements
-Install dependencies using:
+### 💻 Frontend (Streamlit)
 
-bash
-Copy
-Edit
-pip install -r requirements.txt
-🌐 API Endpoint
-POST /chat: Accepts user input and returns chatbot response as JSON:
+1.  bashCopyDownloadcd frontend
+    
+2.  bashCopyDownloadstreamlit run app.py
+    
 
-json
-Copy
-Edit
-{
-  "response": "<bot reply>"
-}
-📌 Notes
-Ensure your backend is running before launching the Streamlit app.
+📂 Project Structure
+--------------------
 
-Replace API_KEY and model name in main.py with your actual values.
+Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   hello-chatbot/  ├── backend/  │   └── main.py              # FastAPI backend logic  ├── frontend/  │   └── app.py               # Streamlit UI implementation  ├── requirements.txt         # Dependency list  └── README.md                # Project documentation   `
 
-Streams are handled via stream=True in both backend and frontend.
+🌐 API Documentation
+--------------------
+
+### POST /chat
+
+**Request Format**Send user input as JSON:
+
+Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   {"message": "Hello!"}   `
+
+**Response Format**Receive chatbot reply as JSON:
+
+Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   {"response": "Hi! How can I help you?"}   `
+
+🔑 Important Notes
+------------------
+
+1.  **Backend First**: Always start the FastAPI backend before launching the Streamlit frontend.
+    
+2.  pythonCopyDownloadAPI\_KEY = "your-actual-api-key-here"
+    
+3.  **Streaming**: Enabled via stream=True in both backend and frontend code.
+    
+4.  **Dependencies**: Ensure all packages in requirements.txt are installed.
+    
 
 Built with ❤️ using Python, FastAPI, and Streamlit.
