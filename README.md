@@ -1,44 +1,71 @@
-# Hello World Chatbot 🤖
+\# Hello World Chatbot 🤖
 
-A simple chatbot using **FastAPI** as the backend and **Streamlit** as the frontend.
+A simple chatbot using \*\*FastAPI\*\* as the backend and \*\*Streamlit\*\* as the frontend.
 
-## 📦 How to Run
+\## 📦 How to Run
 
-### 🔧 Backend (FastAPI)
+\### 🔧 Backend (FastAPI)
 
-```bash
+\`\`\`bash
+
 cd backend
+
 uvicorn main:app --reload
+
 💻 Frontend (Streamlit)
+
 bash
+
 Copy
+
 Edit
+
 cd frontend
+
 streamlit run app.py
+
 📁 Project Structure
+
 bash
+
 Copy
+
 Edit
+
 hello-chatbot/
+
 ├── backend/
-│   └── main.py              # FastAPI backend code
+
+│ └── main.py # FastAPI backend code
+
 ├── frontend/
-│   └── app.py               # Streamlit frontend code
-├── requirements.txt         # Python dependencies
-└── README.md                # Project overview
+
+│ └── app.py # Streamlit frontend code
+
+├── requirements.txt # Python dependencies
+
+└── README.md # Project overview
+
 ✅ Requirements
+
 Install dependencies using:
 
 bash
+
 Copy
+
 Edit
+
 pip install -r requirements.txt
+
 🌐 API Endpoint
+
 POST /chat: Accepts user input and returns chatbot response.
 
 📌 Notes
+
 Ensure your backend is running before launching the Streamlit app.
 
-Replace API_KEY and model name in main.py with your actual values.
+Replace API\_KEY and model name in main.py with your actual values.
 
 Built with ❤️ using Python, FastAPI, and Streamlit.
