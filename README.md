@@ -2,27 +2,40 @@
 
 A simple chatbot using **FastAPI** as the backend and **Streamlit** as the frontend.
 
-## 📦 How to Run
+---
+
+## 🚀 Getting Started
+
+### 📋 Prerequisites
+- Python 3.8+
+- Install dependencies:
+  ```bash
+  pip install -r requirements.txt
 
 
 ### 🔧 Backend (FastAPI)
 
-1.  bashCopyDownloadcd backend
-    
-2.  bashCopyDownloaduvicorn main:app --reload
+`   cd backend    
+    uvicorn main:app --reload    cd frontend    streamlit run app.py   `
     
 
 ### 💻 Frontend (Streamlit)
 
-1.  bashCopyDownloadcd frontend
-    
-2.  bashCopyDownloadstreamlit run app.py
+
+`   cd frontend    
+    streamlit run app.py   `
     
 
 📂 Project Structure
 --------------------
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   hello-chatbot/  ├── backend/  │   └── main.py              # FastAPI backend logic  ├── frontend/  │   └── app.py               # Streamlit UI implementation  ├── requirements.txt         # Dependency list  └── README.md                # Project documentation   `
+`   hello-chatbot/  
+    ├── backend/  
+    │   └── main.py              # FastAPI backend logic  
+    ├── frontend/  
+    │   └── app.py               # Streamlit UI implementation  
+    ├── requirements.txt         # Dependency list  
+    └── README.md                # Project documentation   `
 
 🌐 API Documentation
 --------------------
@@ -30,12 +43,11 @@ Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQL
 ### POST /chat
 
 **Request Format**Send user input as JSON:
-
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   {"message": "Hello!"}   `
+`   {"message": "Hello!"}   `
 
 **Response Format**Receive chatbot reply as JSON:
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   {"response": "Hi! How can I help you?"}   `
+`   {"response": "Hi! How can I help you?"}   `
 
 🔑 Important Notes
 ------------------
@@ -49,4 +61,4 @@ Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQL
 4.  **Dependencies**: Ensure all packages in requirements.txt are installed.
     
 
-Built with ❤️ using Python, FastAPI, and Streamlit.
+Built using Python, FastAPI, and Streamlit.
