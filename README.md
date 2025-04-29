@@ -9,7 +9,7 @@ A simple chatbot using **FastAPI** as the backend and **Streamlit** as the front
 ### 📋 Prerequisites
 - Python 3.8+
 - Install dependencies:
-  ```bash
+    ```bash
     pip install -r requirements.txt
 
 
