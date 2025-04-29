@@ -10,19 +10,19 @@ A simple chatbot using **FastAPI** as the backend and **Streamlit** as the front
 - Python 3.8+
 - Install dependencies:
   ```bash
-      pip install -r requirements.txt
+    pip install -r requirements.txt
 
 
 ### 🔧 Backend (FastAPI)
 
-      cd backend    
-      uvicorn main:app --reload
+    cd backend    
+    uvicorn main:app --reload
 
 
 ### 💻 Frontend (Streamlit)
 
-      cd backend    
-      uvicorn main:app --reload
+    cd backend    
+    uvicorn main:app --reload
     
 
 📂 Project Structure
