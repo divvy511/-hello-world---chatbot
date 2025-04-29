@@ -15,27 +15,25 @@ A simple chatbot using **FastAPI** as the backend and **Streamlit** as the front
 
 ### 🔧 Backend (FastAPI)
 
-`   cd backend    
-    uvicorn main:app --reload    cd frontend    streamlit run app.py   `
-    
+      cd backend    
+        uvicorn main:app --reload
+
 
 ### 💻 Frontend (Streamlit)
 
-
-`   cd frontend    
-    streamlit run app.py   `
+      cd backend    
+        uvicorn main:app --reload
     
 
 📂 Project Structure
 --------------------
-
-`   hello-chatbot/  
-    ├── backend/  
-    │   └── main.py              # FastAPI backend logic  
-    ├── frontend/  
-    │   └── app.py               # Streamlit UI implementation  
-    ├── requirements.txt         # Dependency list  
-    └── README.md                # Project documentation   `
+hello-chatbot/
+├── backend/
+│   └── main.py              # FastAPI backend logic
+├── frontend/
+│   └── app.py               # Streamlit UI implementation
+├── requirements.txt         # Dependency list
+└── README.md                # Project documentation
 
 🌐 API Documentation
 --------------------
@@ -43,22 +41,21 @@ A simple chatbot using **FastAPI** as the backend and **Streamlit** as the front
 ### POST /chat
 
 **Request Format**Send user input as JSON:
-`   {"message": "Hello!"}   `
+
+  {"message": "Hello!"}   
 
 **Response Format**Receive chatbot reply as JSON:
 
-`   {"response": "Hi! How can I help you?"}   `
+  {"response": "Hi! How can I help you?"} 
 
 🔑 Important Notes
 ------------------
 
 1.  **Backend First**: Always start the FastAPI backend before launching the Streamlit frontend.
     
-2.  pythonCopyDownloadAPI\_KEY = "your-actual-api-key-here"
+2.  **Streaming**: Enabled via stream=True in both backend and frontend code.
     
-3.  **Streaming**: Enabled via stream=True in both backend and frontend code.
-    
-4.  **Dependencies**: Ensure all packages in requirements.txt are installed.
+3.  **Dependencies**: Ensure all packages in requirements.txt are installed.
     
 
 Built using Python, FastAPI, and Streamlit.
