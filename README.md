@@ -16,24 +16,24 @@ A simple chatbot using **FastAPI** as the backend and **Streamlit** as the front
 ### 🔧 Backend (FastAPI)
 
       cd backend    
-        uvicorn main:app --reload
+      uvicorn main:app --reload
 
 
 ### 💻 Frontend (Streamlit)
 
       cd backend    
-        uvicorn main:app --reload
+      uvicorn main:app --reload
     
 
 📂 Project Structure
 --------------------
-hello-chatbot/
-├── backend/
-│   └── main.py              # FastAPI backend logic
-├── frontend/
-│   └── app.py               # Streamlit UI implementation
-├── requirements.txt         # Dependency list
-└── README.md                # Project documentation
+    hello-chatbot/
+    ├── backend/
+    │   └── main.py              # FastAPI backend logic
+    ├── frontend/
+    │   └── app.py               # Streamlit UI implementation
+    ├── requirements.txt         # Dependency list
+    └── README.md                # Project documentation
 
 🌐 API Documentation
 --------------------
@@ -42,11 +42,11 @@ hello-chatbot/
 
 **Request Format**Send user input as JSON:
 
-  {"message": "Hello!"}   
+    {"message": "Hello!"}   
 
 **Response Format**Receive chatbot reply as JSON:
 
-  {"response": "Hi! How can I help you?"} 
+    {"response": "Hi! How can I help you?"} 
 
 🔑 Important Notes
 ------------------
